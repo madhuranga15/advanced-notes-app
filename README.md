@@ -1,6 +1,6 @@
 # Advanced Notes App
 
-![Notes App](screenshot.png)
+![Notes App](screenshot2.png)
 
 Full stack notes application built using Node.js and Express.
 
