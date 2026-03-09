@@ -1,0 +1,140 @@
+body{
+font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif;
+background:#f2f2f7;
+margin:0;
+padding:40px;
+color:#1c1c1e;
+transition:0.3s;
+}
+
+.container{
+max-width:700px;
+margin:auto;
+}
+
+h1{
+text-align:center;
+font-weight:600;
+margin-bottom:30px;
+}
+
+.add-box{
+display:flex;
+gap:10px;
+margin-bottom:20px;
+}
+
+input{
+flex:1;
+padding:14px;
+border-radius:12px;
+border:none;
+background:white;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+font-size:16px;
+}
+
+button{
+padding:14px 18px;
+border:none;
+border-radius:12px;
+background:#007aff;
+color:white;
+font-weight:600;
+cursor:pointer;
+}
+
+button:hover{
+background:#0063d1;
+}
+
+#search{
+margin-top:10px;
+width:100%;
+padding:12px;
+border-radius:12px;
+border:none;
+background:white;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.notes-grid{
+margin-top:25px;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.note{
+background:white;
+padding:16px;
+border-radius:14px;
+box-shadow:0 2px 10px rgba(0,0,0,0.06);
+position:relative;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.note span{
+flex:1;
+font-size:16px;
+}
+
+.actions{
+display:flex;
+gap:10px;
+}
+
+.icon{
+cursor:pointer;
+font-size:18px;
+}
+
+.pinned{
+border-left:4px solid #ffd60a;
+}
+
+.mode{
+margin-bottom:15px;
+background:#e5e5ea;
+color:black;
+}
+.light{
+background:#ffffff;
+color:#000;
+}
+.pinned{
+border-left:4px solid gold;
+background:#fff9db;
+}
+
+body.dark .pinned{
+background:#3a3a1f;
+}
+
+body.dark{
+background:#1c1c1e;
+color:white;
+}
+
+body.dark input{
+background:#2c2c2e;
+color:white;
+}
+
+body.dark .note{
+background:#2c2c2e;
+color:white;
+}
+
+body.dark #search{
+background:#2c2c2e;
+color:white;
+}
+
+body.dark button{
+background:#0a84ff;
+}
+.note{ transition: transform .15s ease, box-shadow .15s ease; }
+.note:hover{ transform: translateY(-2px); box-shadow:0 6px 16px rgba(0,0,0,.12); }

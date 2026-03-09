@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Notes App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📝 My Notes</h1>
+
+<button onclick="toggleMode()" class="mode">🌙 Toggle Mode</button>
+
+<div class="add-box">
+
+<input id="noteInput" placeholder="Write a new note...">
+
+<button onclick="addNote()">Add Note</button>
+
+</div>
+
+<input id="search" placeholder="Search notes..." oninput="searchNotes()">
+
+<div id="notes" class="notes-grid"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
